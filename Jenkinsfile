@@ -2,7 +2,7 @@
 node {
    def mvn = tool (name: 'maven3', type: 'maven') + '/bin/mvn'
    stage('SCM Checkout'){
-    // Clone repo
+     Clone repo
 	git branch: 'master', 
 	credentialsId: 'github', 
 	url: 'https://github.com/ranjanajindal/shopizer.git'
